@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/proyecto-final-argentina-programa",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
