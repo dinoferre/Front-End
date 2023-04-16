@@ -1,29 +1,31 @@
-# ProyectoFinalArgentinaPrograma
+# Proyecto Final Argentina Programa
 
 En Desarrollo...
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Este proyecto es el frontend de una aplicación web construida con Angular y TypeScript. La aplicación se conecta a un backend desarrollado en Spring Boot y utiliza una base de datos MySQL para almacenar y recuperar datos.
 
-## Development server
+## Tecnologías Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular 12:** Framework de desarrollo web para crear aplicaciones SPA (Single Page Application).
+- **TypeScript 4.3:** Superset de JavaScript que permite agregar tipos de datos y otras características a JavaScript.
+- **Spring Boot 2.5:** Framework de Java que facilita la creación de aplicaciones web y microservicios escalables.
+- **MySQL 8.0:** Es una base de datos relacional de código abierto. Ofrece una alta escalabilidad, seguridad y fiabilidad.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-Componentes: Angular utiliza una arquitectura basada en componentes para crear y organizar la interfaz de usuario.
 
-## Build
+-Módulos: La aplicación se organiza en módulos para mejorar la mantenibilidad y escalabilidad del proyecto.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-Services: Los servicios en Angular se utilizan para realizar peticiones al backend y gestionar el estado de la aplicación.
 
-## Running unit tests
+Configuración del proyecto
+Antes de ejecutar el proyecto, asegúrese de tener instalado Node.js y Angular CLI. Luego, clone este repositorio en su máquina local y ejecute el comando npm install para instalar las dependencias del proyecto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Conexión con el backend
 
-## Running end-to-end tests
+La aplicación se conecta a un backend desarrollado en Spring Boot a través de peticiones HTTP. Para establecer la conexión con el backend, asegúrese de que el backend esté funcionando correctamente y que la dirección del servidor se encuentre correctamente configurada en la aplicación. La configuración de la conexión con el backend se encuentra en el archivo `environment.ts`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Ejecución del proyecto
 
-## Further help
+Para ejecutar la aplicación, abra una terminal en el directorio del proyecto y ejecute el comando `ng serve`. La aplicación se ejecutará en el puerto 4200 por defecto. Abra un navegador web y navegue a la dirección http://localhost:4200 para visualizar la aplicación.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
