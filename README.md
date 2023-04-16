@@ -21,8 +21,11 @@ Este proyecto es el frontend de una aplicación web construida con Angular y Typ
 Configuración del proyecto
 Antes de ejecutar el proyecto, asegúrese de tener instalado Node.js y Angular CLI. Luego, clone este repositorio en su máquina local y ejecute el comando npm install para instalar las dependencias del proyecto.
 
-Conexión con el backend
-La aplicación se conecta a un backend desarrollado en Spring Boot a través de peticiones HTTP. Para establecer la conexión con el backend, asegúrese de que el backend esté funcionando correctamente y que la dirección del servidor se encuentre correctamente configurada en la aplicación. La configuración de la conexión con el backend se encuentra en el archivo environment.ts.
+## Conexión con el backend
 
-Ejecución del proyecto
-Para ejecutar la aplicación, abra una terminal en el directorio del proyecto y ejecute el comando ng serve. La aplicación se ejecutará en el puerto 4200 por defecto. Abra un navegador web y navegue a la dirección http://localhost:4200 para visualizar la aplicación.
+La aplicación se conecta a un backend desarrollado en Spring Boot a través de peticiones HTTP. Para establecer la conexión con el backend, asegúrese de que el backend esté funcionando correctamente y que la dirección del servidor se encuentre correctamente configurada en la aplicación. La configuración de la conexión con el backend se encuentra en el archivo `environment.ts`.
+
+## Ejecución del proyecto
+
+Para ejecutar la aplicación, abra una terminal en el directorio del proyecto y ejecute el comando `ng serve`. La aplicación se ejecutará en el puerto 4200 por defecto. Abra un navegador web y navegue a la dirección http://localhost:4200 para visualizar la aplicación.
+
