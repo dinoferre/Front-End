@@ -1,0 +1,16 @@
+.sobre-mi {
+  height: 600px;
+  padding: 20px;
+  
+}
+
+.sobre-mi .contenedor {
+  margin-top: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 2em;
+  border: 2px solid #0DCAF0;
+}

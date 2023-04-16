@@ -1,0 +1,40 @@
+<div>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-black">
+    <app-logo-ap></app-logo-ap>
+    <div class="container-fluid">
+      <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-ellipsis fa-beat-fade" style="color: #0DCAF0;"></i>
+      </button>
+      <div class="collapse navbar-collapse order-1" id="navbar-toggler">
+        <ul class="navbar-nav ms-auto d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificaciones">Certificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-outline-info" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+      <button type="button" class="btn btn-outline-info" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
+    </div>
+  </nav>
+</div>
+
+<div>
+  <app-banner></app-banner>
+</div>

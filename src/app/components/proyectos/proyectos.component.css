@@ -1,0 +1,76 @@
+#proyectos {
+  background-color: black; /* Cambia el color de fondo a gris claro */
+}
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+  color: white;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+  color: #0DCAF0;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem; /* ajusta el tamaño del icono */
+  transform: scale(1.5); /* ajusta el tamaño del contenedor */
+  margin-left: 0.5rem; /* ajusta el tamaño del margen */
+}
+
+.overlay i {
+  color: white;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.iconos-contenedor a+a {
+  margin-left: 0.5rem; /* ajusta el tamaño del margen */
+}
+
+.btn {
+  margin-top: 1rem;
+  border: 2px solid #0DCAF0;
+}

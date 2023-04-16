@@ -1,0 +1,14 @@
+<div class="fondo" style="background-image: url('../../../assets/banner.png'); background-size: cover;">
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form" #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <input type="text" placeholder="usuario" id="nombreUsuario" name="nombreUsuario"
+                    [(ngModel)]="nombreUsuario" required />
+                <input type="password" placeholder="contraseña" id="password" name="password" [(ngModel)]="password"
+                required />
+                <button>INGRESAR</button>
+                <p class="message">Quieres registrarte? Vuelve y contáctame <a href="#">VOLVER</a></p>
+            </form>
+        </div>
+    </div>
+</div>
