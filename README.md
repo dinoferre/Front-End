@@ -29,3 +29,4 @@ La aplicación se conecta a un backend desarrollado en Spring Boot a través de 
 
 Para ejecutar la aplicación, abra una terminal en el directorio del proyecto y ejecute el comando `ng serve`. La aplicación se ejecutará en el puerto 4200 por defecto. Abra un navegador web y navegue a la dirección http://localhost:4200 para visualizar la aplicación.
 
+Dino Ferré 👽
