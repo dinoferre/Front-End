@@ -11,9 +11,9 @@ export class PersonaService {
   // URL = 'http://localhost:8080/personas/';
   URL = 'https://portfolio-backend-tqnw.onrender.com/';
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  public getPersona():Observable<persona>{
+  public getPersona(): Observable<persona> {
     return this.http.get<persona>(this.URL + 'traer/perfil');
   }
 }

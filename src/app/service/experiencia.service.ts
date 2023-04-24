@@ -13,24 +13,24 @@ export class ExperienciaService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public list(): Observable<Experiencia[]>{
+  public list(): Observable<Experiencia[]> {
     return this.httpClient.get<Experiencia[]>(this.expURL + 'lista');
   }
 
-  public getById({ id }: { id: number; }): Observable<Experiencia>{
+  public getById({ id }: { id: number; }): Observable<Experiencia> {
     return this.httpClient.get<Experiencia>(this.expURL + `detail/${id}`);
-  } 
+  }
 
-  public create(experiencia: Experiencia): Observable<any>{
+  public create(experiencia: Experiencia): Observable<any> {
     return this.httpClient.post<any>(this.expURL + 'crear', experiencia);
   }
 
   public update(id: number, experiencia: Experiencia): Observable<HttpResponse<any>> {
     return this.httpClient.put<HttpResponse<any>>(this.expURL + `update/${id}`, experiencia, { observe: 'response' });
   }
-  
 
-  public delete(id: number): Observable<any>{
+
+  public delete(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.expURL + `delete/${id}`);
   }
 }

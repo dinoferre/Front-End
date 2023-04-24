@@ -3,7 +3,7 @@
   padding: 8% 0 0;
   margin: auto;
 }
-  
+
 
 .form {
   position: relative;
@@ -15,6 +15,7 @@
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .form input {
   outline: 0;
   background: #f2f2f2;
@@ -25,6 +26,7 @@
   box-sizing: border-box;
   font-size: 14px;
 }
+
 .form button {
   text-transform: uppercase;
   outline: 0;
@@ -38,37 +40,48 @@
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.form button:hover,.form button:active,.form button:focus {
+
+.form button:hover,
+.form button:active,
+.form button:focus {
   background: #0DCAF0;
 }
+
 .form .message {
   margin: 15px 0 0;
   color: black;
   font-size: 12px;
 }
+
 .form .message a {
   color: #0DCAF0;
   text-decoration: none;
   font-size: 15px;
 }
+
 .form .register-form {
   display: none;
 }
+
 .container {
   position: relative;
   z-index: 1;
   max-width: 300px;
   margin: 0 auto;
 }
-.container:before, .container:after {
+
+.container:before,
+.container:after {
   content: "";
   display: block;
   clear: both;
 }
+
 .container .info {
   margin: 50px auto;
   text-align: center;
 }
+
 .container .info h1 {
   margin: 0 0 15px;
   padding: 0;
@@ -76,16 +89,18 @@
   font-weight: 300;
   color: black;
 }
+
 .container .info span {
   color: black;
   font-size: 12px;
 }
+
 .container .info span a {
   color: black;
   text-decoration: none;
 }
 
 .fondo {
-    width: auto;
-    height: 580px;
+  width: auto;
+  height: 580px;
 }

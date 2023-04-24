@@ -22,10 +22,10 @@ h3 {
     padding: 15px 10px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .linea {
     border-top: 3px solid black;
     height: 2px;
     padding: 0;
     margin: 20px auto 0 auto;
-  }
-  
+}

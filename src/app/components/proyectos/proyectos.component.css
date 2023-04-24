@@ -1,5 +1,6 @@
 #proyectos {
-  background-color: black; /* Cambia el color de fondo a gris claro */
+  background-color: black;
+  /* Cambia el color de fondo a gris claro */
 }
 
 .proyectos-recientes {
@@ -55,9 +56,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2rem; /* ajusta el tamaño del icono */
-  transform: scale(1.5); /* ajusta el tamaño del contenedor */
-  margin-left: 0.5rem; /* ajusta el tamaño del margen */
+  font-size: 2rem;
+  /* ajusta el tamaño del icono */
+  transform: scale(1.5);
+  /* ajusta el tamaño del contenedor */
+  margin-left: 0.5rem;
+  /* ajusta el tamaño del margen */
 }
 
 .overlay i {
@@ -67,7 +71,8 @@
 }
 
 .iconos-contenedor a+a {
-  margin-left: 0.5rem; /* ajusta el tamaño del margen */
+  margin-left: 0.5rem;
+  /* ajusta el tamaño del margen */
 }
 
 .btn {
