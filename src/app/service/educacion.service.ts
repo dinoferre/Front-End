@@ -9,9 +9,7 @@ import { Educacion } from '../model/educacion';
 
 export class EducacionService {
 
-  // URL = 'http://localhost:8080/educacion/';
-  URL = 'https://portfolio-backend-tqnw.onrender.com/educacion/';
-
+  URL = window.location.href.includes('localhost') ? 'http://localhost:8080/educacion/' : 'https://portfolio-backend-tqnw.onrender.com/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

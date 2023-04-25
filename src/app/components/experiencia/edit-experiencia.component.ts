@@ -13,16 +13,21 @@ export class EditExperienciaComponent implements OnInit {
 
   expLab: Experiencia = null;
 
-  constructor(private sExperiencia: ExperienciaService, private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+  constructor(
+    private sExperiencia: ExperienciaService,
+    private activatedRouter: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.sExperiencia.getById(id).subscribe(
+    this.sExperiencia.getById({ id }).subscribe(
       data => {
         this.expLab = data;
-      }, err => {
-        alert("Error al modificar experiencia");
+      },
+      error => {
+        alert("Error al modificar la experiencia");
+        console.error(error);
         this.router.navigate(['']);
       }
     )
@@ -34,7 +39,7 @@ export class EditExperienciaComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert("Error al modificar experiencia");
+        alert("Error al modificar la experiencia");
         this.router.navigate(['']);
       }
     )

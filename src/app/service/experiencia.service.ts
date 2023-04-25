@@ -8,8 +8,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaService {
 
-  // expURL = 'http://localhost:8080/explaboral/';
-  expURL = 'https://portfolio-backend-tqnw.onrender.com/explaboral/';
+  expURL = window.location.href.includes('localhost') ? 'http://localhost:8080/explaboral/' : 'https://portfolio-backend-tqnw.onrender.com/explaboral/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -25,10 +24,9 @@ export class ExperienciaService {
     return this.httpClient.post<any>(this.expURL + 'crear', experiencia);
   }
 
-  public update(id: number, experiencia: Experiencia): Observable<HttpResponse<any>> {
-    return this.httpClient.put<HttpResponse<any>>(this.expURL + `update/${id}`, experiencia, { observe: 'response' });
+  public update(id: number, experiencia: Experiencia): Observable<any> {
+    return this.httpClient.put<any>(this.expURL + `update/${id}`, experiencia);
   }
-
 
   public delete(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.expURL + `delete/${id}`);

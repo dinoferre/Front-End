@@ -11,12 +11,9 @@ import { JwtDto } from '../model/jwt-dto';
 
 export class AuthService {
 
-  // authURL = 'http://localhost:8080/auth/';
-  authURL = 'https://portfolio-backend-tqnw.onrender.com/auth/';
-
+  authURL = window.location.href.includes('localhost') ? 'http://localhost:8080/auth/' : 'https://portfolio-backend-tqnw.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
-
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {
     return this.httpClient.post<any>(this.authURL + 'nuevo', nuevoUsuario);
