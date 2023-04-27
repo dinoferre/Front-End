@@ -1,3 +1,13 @@
+/**
+ * Este código tiene una propiedad educacion de tipo Educacion y dos métodos ngOnInit y onUpdate.
+ * El método ngOnInit utiliza el servicio EducacionService para obtener la educación con un id 
+ * específico y asigna los datos a la propiedad educacion.
+ * El método onUpdate utiliza el servicio EducacionService para actualizar la educación con un id 
+ * específico y los nuevos datos en la propiedad educacion. 
+ *
+ * @author Dino Ferré
+ **/
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';

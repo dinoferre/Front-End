@@ -1,3 +1,14 @@
+/**
+ * Este componente se encarga de mostrar un formulario para editar una experiencia laboral específica. 
+ * El componente recupera el ID de la experiencia de la URL y usa el servicio "ExperienciaService" 
+ * para obtener la información de la experiencia actual. El usuario puede modificar los datos en el 
+ * formulario y, al hacer clic en el botón "Actualizar", se llama al método "onUpdate()" que utiliza 
+ * el servicio "ExperienciaService" para actualizar los datos en la base de datos. Si hay algún error 
+ * en el proceso, se muestra una alerta y se redirige al usuario a la página principal.
+ *
+ * @author Dino Ferré
+ **/
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia';

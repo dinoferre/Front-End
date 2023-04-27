@@ -1,3 +1,12 @@
+<!-- 
+  Este es un formulario de creación de educación que consta de dos campos de entrada para el nombre y 
+  la descripción de la educación, y un botón para enviar la información. Se utiliza la directiva 
+  ngSubmit para llamar a la función onCreate() en el componente cuando se envía el formulario. 
+  También se utiliza ngModel para vincular los valores de los campos de entrada a las propiedades de 
+  la clase del componente.
+  Autor: Dino Ferré 
+-->
+
 <div class="container" style="margin: 20px;">
   <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
     <div class="form-group">

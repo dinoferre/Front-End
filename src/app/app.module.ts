@@ -1,7 +1,15 @@
+/**
+ * En este código defino el módulo principal de la app Angular, que importa y declara los componentes, 
+ * módulos y servicios necesarios. También especifico el componente raíz de la aplicación, así como el 
+ * proveedor del interceptor para las solicitudes HTTP. Finalmente, defino el AppModule como el módulo 
+ * principal de la app
+ *
+ * @author Dino Ferré
+ **/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';

@@ -1,3 +1,8 @@
+/*
+En este código defino estilos CSS generales
+Autor: Dino Ferré
+*/
+
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -5,7 +10,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/*Estilos generales*/
 section {
   display: flex;
   flex-direction: column;

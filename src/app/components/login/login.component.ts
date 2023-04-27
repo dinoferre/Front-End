@@ -1,3 +1,14 @@
+/**
+ * El código muestra un componente de inicio de sesión de usuario. El componente se encarga de la 
+ * autenticación de usuario en la app y utiliza servicios de Token y Auth para administrar el inicio 
+ * de sesión. El método onLogin() se dispara cuando el usuario hace clic en el botón "Ingresar", 
+ * y envía las credenciales del usuario al servidor para verificar la autenticidad. Si las credenciales 
+ * son correctas, el usuario es redirigido a la página principal, de lo contrario, se muestra un 
+ * mensaje de error en la página de inicio de sesión.
+ *
+ * @author Dino Ferré
+ **/
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/model/login-usuario';

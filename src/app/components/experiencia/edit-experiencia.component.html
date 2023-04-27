@@ -1,3 +1,12 @@
+<!-- 
+  Este es un componente que muestra un formulario para actualizar la información de una experiencia 
+  laboral. Se utiliza la directiva *ngIf para mostrar el formulario solamente si la propiedad expLab 
+  tiene un valor. El formulario tiene dos campos de entrada de texto para el nombre de la empresa y 
+  la descripción de la tarea, y un botón para actualizar la información. Cuando se hace clic en el 
+  botón, se ejecuta el método onUpdate() del componente.
+  Autor: Dino Ferré 
+-->
+
 <div class="container" *ngIf="expLab">
     <div class="row">
         <div>

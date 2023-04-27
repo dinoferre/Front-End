@@ -1,6 +1,10 @@
+/*
+En este código defino estilos CSS para la sección "Proyectos"
+Autor: Dino Ferré
+*/
+
 #proyectos {
   background-color: black;
-  /* Cambia el color de fondo a gris claro */
 }
 
 .proyectos-recientes {
@@ -57,11 +61,8 @@
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  /* ajusta el tamaño del icono */
   transform: scale(1.5);
-  /* ajusta el tamaño del contenedor */
   margin-left: 0.5rem;
-  /* ajusta el tamaño del margen */
 }
 
 .overlay i {
@@ -72,7 +73,6 @@
 
 .iconos-contenedor a+a {
   margin-left: 0.5rem;
-  /* ajusta el tamaño del margen */
 }
 
 .btn {

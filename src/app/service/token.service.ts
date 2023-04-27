@@ -1,3 +1,11 @@
+/**
+ * El servicio TokenService tiene métodos para manejar el token de autenticación en sessionStorage. 
+ * Incluye métodos para configurar, obtener y eliminar el token, el nombre de usuario y los roles. 
+ * También proporciona un método para cerrar sesión y eliminar todo el almacenamiento en sesión.
+ *
+ * @author Dino Ferré
+ **/
+
 import { Injectable } from '@angular/core';
 
 const TOKEN_KEY = 'AuthToken';

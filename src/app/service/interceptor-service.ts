@@ -1,3 +1,13 @@
+/**
+ * Este código muestra la definición de una clase InterceptorService que implementa el interfaz 
+ * HttpInterceptor de Angular para agregar un token JWT a las solicitudes HTTP que realizan los 
+ * usuarios autenticados en la aplicación.
+ * Además, se exporta un objeto interceptorProvider que se utiliza para proporcionar el servicio 
+ * InterceptorService como un interceptor HTTP de Angular, utilizando el proveedor HTTP_INTERCEPTORS.
+ *
+ * @author Dino Ferré
+ **/
+
 import { HttpEvent, HttpHandler, HttpRequest, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";

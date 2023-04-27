@@ -1,3 +1,12 @@
+/**
+ * La clase EducacionService es un servicio que maneja las operaciones CRUD 
+ * (crear, leer, actualizar y eliminar) de la entidad Educacion. Tiene una URL que depende 
+ * del entorno en el que se ejecuta la aplicación y utiliza el módulo HttpClient para hacer 
+ * solicitudes HTTP.
+ *
+ * @author Dino Ferré
+ **/
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';

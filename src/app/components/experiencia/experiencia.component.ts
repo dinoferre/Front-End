@@ -1,3 +1,12 @@
+/**
+ * Este código se encarga de cargar una lista de experiencias y mostrarlas en una vista. Además, 
+ * tiene la función delete para borrar una experiencia en particular y la variable isLogged para 
+ * verificar si el usuario está conectado. La función ngOnInit se encarga de cargar la lista de 
+ * experiencias y verificar si el usuario está conectado.
+ *
+ * @author Dino Ferré
+ **/
+
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ExperienciaService } from 'src/app/service/experiencia.service';

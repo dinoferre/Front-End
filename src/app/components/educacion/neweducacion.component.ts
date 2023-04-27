@@ -1,3 +1,12 @@
+/**
+ * Este código permite agregar nuevos datos de educación. Este componente tiene dos propiedades: 
+ * "nombreE" y "descripcionE". Tiene un constructor que inyecta un servicio de Educacion y el Router 
+ * de Angular, y un método "onCreate()" que crea una nueva instancia de Educacion y la guarda 
+ * mediante el método "save()" del servicio.
+ *
+ * @author Dino Ferré
+ **/
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
