@@ -21,15 +21,15 @@ export class ExperienciaService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public list(): Observable<Experiencia[]> {
+  public lista(): Observable<Experiencia[]> {
     return this.httpClient.get<Experiencia[]>(this.expURL + 'lista');
   }
 
-  public getById({ id }: { id: number; }): Observable<Experiencia> {
+  public detail({ id }: { id: number; }): Observable<Experiencia> {
     return this.httpClient.get<Experiencia>(this.expURL + `detail/${id}`);
   }
 
-  public create(experiencia: Experiencia): Observable<any> {
+  public save(experiencia: Experiencia): Observable<any> {
     return this.httpClient.post<any>(this.expURL + 'crear', experiencia);
   }
 
