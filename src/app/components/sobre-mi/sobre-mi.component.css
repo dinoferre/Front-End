@@ -1,5 +1,5 @@
 /*
-En este código defino estilos CSS para la sección "Sobre Mí" y el botón de descarga de CV 
+En este código defino estilos CSS para la sección "Sobre Mí" y el botón de descarga de CV
 que se encuentra dentro de la misma.
 Autor: Dino Ferré
 */
@@ -18,4 +18,10 @@ Autor: Dino Ferré
 .btn {
   margin-top: 2em;
   border: 2px solid #0DCAF0;
+}
+
+@media (max-width: 500px) {
+  .sobre-mi {
+    height: 1000px;
+  }
 }
